@@ -61,7 +61,7 @@ const unsigned long FLUCTUATION_INTERVAL = 1000;  // Fluctuate every 1 second
 
 void setup() {
   Serial.begin(9600);
-  Serial.println(F("\n===Room/Algae Temperature Monitor ==="));
+  Serial.println(F("\n=== Room/Algae Temperature Monitor ==="));
   Serial.println(F("Initializing..."));
   
   // Set ADC reference to default (5V)
@@ -195,12 +195,6 @@ void displayTemperatures() {
     lcd.print("C");
   } else {
     lcd.print("ERROR");
-  }
-  
-  // Show fake mode indicator
-  if (fakeMode) {
-    lcd.setCursor(15, 0);
-    lcd.print("F");
   }
 }
 
