@@ -1,1 +1,15 @@
 .pio
+
+# Arduino
+*.hex
+*.elf
+*.bin
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
